@@ -1,0 +1,49 @@
+.footer {
+    background-color: #333333;
+    border-radius: 0px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.address-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.net-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.net-item {
+    display: flex;
+    align-items: baseline;
+    width: 35px;
+    height: 35px;
+}
+
+.net-link {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+
+}
+
+.net-icon {
+    fill: currentColor;
+}
+
+.copyright {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+
+    color: #FFFFFF;
+}
