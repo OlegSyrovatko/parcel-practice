@@ -1,0 +1,44 @@
+      <!-- by Oleg Syrovatko -->
+      
+      <section class = "our-work">
+        <h2 class="visually-hidden">Our work</h2>
+
+        <ul class = "our-work__block">
+          <li class="our-work__item">
+            <div class="our-work__icon">
+                <svg width="33" height="31">
+                    <use href="./images/icons.svg#our-work-banking"></use>
+                </svg>
+            </div>
+            <h3 class="our-work__title">Investmant Banking</h3>
+            <p class="our-work__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequatur, necessitatibus!
+            </p>
+          </li>
+          <li class="our-work__item">
+            <div class="our-work__icon">
+                <svg width="35" height="35">
+                    <use href="./images/icons.svg#our-work-manager"></use>
+                </svg>
+            </div>
+            <h3 class="our-work__title">Portfolio Manager</h3>
+            <p class="our-work__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequatur, necessitatibus!
+            </p>
+          </li>
+          <li class="our-work__item">
+            <div class="our-work__icon">
+                <svg width="35" height="35">
+                    <use href="./images/icons.svg#our-work-tax"></use>
+                </svg>
+            </div>
+            <h3 class="our-work__title">Tax & Custudio</h3>
+            <p class="our-work__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequatur, necessitatibus!
+            </p>
+          </li>
+        </ul>
+      </section>

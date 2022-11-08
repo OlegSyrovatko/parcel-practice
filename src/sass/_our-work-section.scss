@@ -1,0 +1,50 @@
+// by Oleg Syrovatko restyling
+
+.our-work{
+    width: 1360px;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+    padding: 40px 66px 19px;
+}
+
+.our-work__block{
+    display: flex;
+    gap: 71 px;
+}
+
+.our-work__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.our-work__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.our-work__title{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.our-work__text{
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+
+
