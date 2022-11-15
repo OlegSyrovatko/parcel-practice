@@ -1,0 +1,80 @@
+/* by Сергій Світайло to Karina Liashko section */
+
+.team {
+    display: flex;
+    gap: 14px;
+}
+
+.team-member {
+    width: calc(100%/3 - 14px/3*2);
+}
+
+.soc-icon-position {
+    position: relative;
+}
+
+.team-member__photo {
+    margin-bottom: 13px;
+    align-items: baseline;
+    position: relative;
+    cursor: pointer;
+}
+
+.net-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.net-list__item {
+
+    display: flex;
+    align-items: baseline;
+    width: 35px;
+    height: 35px;
+}
+
+.net-list--disappearing {
+    position: absolute;
+    opacity: 0;
+    left: 100px;
+    top: 130px;
+}
+
+.soc-icon-position:focus .net-list--disappearing {
+    opacity: 1;
+}
+
+.soc-icon-position:hover .net-list--disappearing {
+    opacity: 1;
+}
+
+.net-list__link {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+
+}
+
+.net-list__icon {
+    fill: currentColor;
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+}
+
+.team-member__title {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.team-member__position {
+    text-align: center;
+    margin-bottom: 57px;
+}
