@@ -1,93 +1,112 @@
 // by Oleg Syrovatko restyling
 
-.banner {
-    width: 1360px;
+.hero {
+    width: 100%;
+    height: 533px;
     margin: 0 auto;
     background-color: black;
-    padding: 280px 0;
-    display: flex;
-    flex-direction: column;
+    padding-top: 144px;
 
-        
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../images/banner-background-640.jpg');
+    url('../images/hero-mobile.jpg');
     
     @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/banner-background-640@2x.jpg');
+        url('../images/hero-mobile@2x.jpg');
     }
 
     @media screen and (min-width: 768px){
+        height: 1024px;
+        padding-top: 407px;
+        
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/banner-background-768.jpg');
+        url('../images/hero-tablet.jpg');
         
         @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url('../images/banner-background-768@2x.jpg');
+            url('../images/hero-tablet@2x.jpg');
         }
     }
 
     @media screen and (min-width: 1200px){
-        height: 600px;
-        padding: 200px 0 200px;
-    
+        height: 768px;
+        padding-top: 279px;
+
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/banner-background.jpg');
+        url('../images/hero-desktop.jpg');
         
         @media (min-device-pixel-ratio: 2),
-          (-webkit-min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url('../images/banner-background@2x.jpg');
+            url('../images/hero-desktop@2x.jpg');
         }
     
     }
 
-    &__head{
-
-        margin: 0 auto 25px;
+    &__title{
+        margin: 0 auto 16px;
         text-align: center;
 
         font-weight: 300;
-        font-size: 55px;
-        line-height: 1.2;
+        font-size: 52px;
+        line-height: 1.27;
         color: #E9E9E9;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 25px;
+
+            font-size: 55px;
+            line-height: 1.2;
+        }
     }
 
     &__text{
-
-        margin: 0 auto 29px;
+        margin: 0 auto 27px;
         text-align: center;
 
         font-weight: 400;
         font-size: 22px;
         line-height: 1.63;
         color: #E9E9E9;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 29px;
+        }
     }
 
-    &__link{
-        margin: 0 auto;
+    &__button{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 5px;
-        cursor: pointer;
-        padding: 11px 27px 12px 42px;
+        
+        height: 45px;
+        min-width: 156px;
+        padding: 0 25px;
+        margin: 0 auto;
+
         font-weight: 400;
-        font-size: 18px;
-        line-height: 1.55;
+        font-size: 16px;
+        line-height: 1.62;
         color: var(--secondary-text-color);
         background-color: var(--main-color);
         border-radius: 5px;
+
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 30px;
+            font-size: 18px;
+            line-height: 1.55;
+        }
     }
 
 }
