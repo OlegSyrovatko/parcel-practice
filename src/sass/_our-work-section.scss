@@ -1,29 +1,38 @@
 // by Oleg Syrovatko restyling
 
 .our-work{
-    width: 1360px;
-    margin: 0 auto;
+    // width: 1360px;
+    // margin: 0 auto;
     background-color: #F4F4F4;
-    padding: 40px 66px 19px;
+    padding: 40px 20px;
 }
 
 .our-work__block{
+    width: 100%;
+
     display: flex;
-    gap: 71 px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
 }
 
 .our-work__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        width: calc(100%/3 - 50px/3*2);
+        max-width: 360px;
+    }
+
 }
 
 .our-work__icon{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin: 10px auto 0;
     width: 67px;
     height: 67px;
     border-radius: 50%;

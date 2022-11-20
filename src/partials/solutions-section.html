@@ -1,16 +1,45 @@
-      <!-- by Vova Maksymchuk section to Oleg Syrovatko restyling -->
-      <section class = "solutions">
-        <img src="./images/rectangle.jpg" alt="we will solve your problems" width="680" height="460" />
-        <div class = "solutions__content">
-          <p class = "solutions__subhead">What you are looking for</p>
-          <h2 class = "solutions__head">We provide bespoke solutions</h2>
-          <p class = "solutions__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
-            ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
-            illum dolore explicabo ab dolores itaque rerum temporibus doloribus
-            iste maiores deleniti?
-          </p>
-          <button class="solutions__link" type="button">Read More</button>
-        </div>
-      </section>
-      
+<!-- by Vova Maksymchuk section to Oleg Syrovatko restyling -->
+
+<section class="solutions">
+  <div class="solutions__image">
+    <img
+      src="./images/rectangle.jpg"
+      alt="we will solve your problems"
+      width="680"
+      height="460"
+    />
+  </div>
+  <div class="solutions__content">
+    <p class="solutions__subhead">What you are looking for</p>
+    <h2 class="solutions__head">We provide bespoke solutions</h2>
+    <p class="solutions__text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
+      dignissimos quae laudantium asperiores nam aliquid impedit harum illum
+      dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores
+      deleniti?
+    </p>
+    <button
+      class="solutions__link js-open-modal"
+      data-modal="solutions-modal"
+      type="button"
+    >
+      Read More
+    </button>
+  </div>
+</section>
+
+<!-- Модальні вікна  -->
+<div class="modal js-modal" data-modal="solutions-modal">
+  <svg
+    class="modal__close js-close-modal"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Модальне вікно 1</p>
+</div>
+<!-- Підложка -->
+<div class="modal-overlay"></div>

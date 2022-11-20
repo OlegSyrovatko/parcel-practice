@@ -1,8 +1,15 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    transition: background-color 0.3s;
+    
+
+    &.sticky{
+        background-color: black;
+        
+    }
 
     &__navigation {
        
