@@ -1,4 +1,4 @@
-.blog-post-section {
+.blog-post {
     padding: 48px 0;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +19,21 @@
         }
     }
 
+    &__image-wrapper {
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+
+        img{
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                height: 100%;
+                object-fit: cover;
+            
+            }
+        }
+    }
+
     &__text-wrapper {
         display: flex;
         flex-direction: column;
@@ -26,14 +41,8 @@
         justify-content: center;
         padding: 30px;
         background-color: #0284D0;
+        flex: 1;
 
-        @media screen and (min-width: 768px) {
-            max-width: 384px;
-        }
-
-        @media screen and (min-width: 1360px) {
-            max-width: 680px;
-        }
     }
 
     &__date {
