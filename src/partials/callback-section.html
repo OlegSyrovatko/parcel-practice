@@ -1,0 +1,74 @@
+<section class="callback">
+  <div class="callback__container">
+    <div class="callback__image-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1360px)"
+          srcset="
+            ./images/callback-desktop.webp    1x,
+            ./images/callback-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/callback-tablet.webp    1x,
+            ./images/callback-tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/callback-mobile.webp    1x,
+            ./images/callback-mobile@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1360px)"
+          srcset="
+            ./images/callback-desktop.jpg    1x,
+            ./images/callback-desktop@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/callback-tablet.jpg    1x,
+            ./images/callback-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          srcset="
+            ./images/callback-mobile.jpg    1x,
+            ./images/callback-mobile@2x.jpg 2x
+          "
+          src="./images/callback-mobile.jpg"
+          alt="Callback manager"
+        />
+      </picture>
+    </div>
+    <div class="callback__registration-container">
+      <div class="callback__registration-wrapper">
+        <h2 class="callback__title">Request Callback</h2>
+        <input
+          class="callback__input"
+          type="text"
+          placeholder="Enter your name"
+          name="name"
+        />
+        <input
+          class="callback__input"
+          type="email"
+          placeholder="Enter email*"
+          name="email"
+        />
+      </div>
+      <button class="callback__button" type="button">Send</button>
+    </div>
+  </div>
+</section>
