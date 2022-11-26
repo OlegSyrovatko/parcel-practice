@@ -36,18 +36,21 @@
 }
 
 .callback__registration-container {
-    padding: 30px;
+    padding: 26px 30px 30px 30px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
         flex: 1;
     }
+    @media screen and (min-width: 1320px) {
+        padding: 78px 30px 82px 30px;
+    }
 }
 .callback__registration-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 32px;
 }
 
 .callback__title {
