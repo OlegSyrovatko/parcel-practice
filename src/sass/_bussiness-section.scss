@@ -33,19 +33,23 @@
 }
 
 .all-our-cases {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
 }
 
 .business-cases-list {
-    width: calc(100%/4 - 8px/4*3);
-}
-
-.business-cases-image {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        width: calc(100%/4 - 8px/4*3);
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 7px;
+    }
 }
